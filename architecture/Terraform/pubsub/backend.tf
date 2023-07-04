@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "${var.project_id}-tf-backend"
+    bucket = "<PROJECT_ID>-tf-backend"
     prefix = "composer/pubsub"
     # impersonate_service_account = "var.tf_sa"
   }

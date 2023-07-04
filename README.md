@@ -4,7 +4,7 @@ This is a small project regarding the architecture of small company: **"Bikeshar
 
 Given a range of dates (*e.g.* `initial_day=2021-01-01`, `end_day=2022-01-02`), the goal is to determine the total cost for each trip.
 
-$t * T_{C} *$
+Cost = $t * T_{C}$
 
 where
 - $T_{C}$ is the trip cost per minute

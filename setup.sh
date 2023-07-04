@@ -2,10 +2,29 @@
 
 # Install python virtual environment
 
-PATH="./architecture/Terraform/main_config"
-for file in $(ls ${PATH}); do
-    sed -i "s/<PROJECT_ID>/${DEVSHELL_PROJECT_ID}/g" "${PATH}/${FILE}"
+# VARIABLE DEFINITION
+# ===============================================================
+TF_PATH="./architecture/Terraform/"
+CLASS_STORAGE="Standard"
+REGION="us-central1"
+# Create a bucket for the backend
+BUCKET="gs://${DEVSHELL_PROJECT_ID}-tf-backend"
+
+# Set Project ID where necessary
+for file in ${TF_PATH}/*/**; do
+    sed -i "s/<PROJECT_ID>/${DEVSHELL_PROJECT_ID}/g" "$file"
 done
+# ===============================================================
+
+# ===============================================================
+# CLOUD STORAGE
+# Create bucket
+gsutil mb -c "${CLASS_STORAGE}" \
+-l "${REGION}" \
+${BUCKET}
+# Set versioning in case of recovery disaster
+gsutil versioning set 'on' ${BUCKET}
+# ===============================================================
 
 # Export Environment variables
 export PROJECT_ID=${DEVSHELL_PROJECT_ID}

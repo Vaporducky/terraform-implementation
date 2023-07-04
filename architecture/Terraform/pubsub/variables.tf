@@ -14,7 +14,7 @@ variable "subscription_id" {
   default     = "bicycle-analytics-dataflow-trigger"
 }
 
-variable "schema_definition" {
-  description       = "AVRO schema for the topic ID. Ensures consistency."
-  schema_definition = file("../../PubSub/Schema/bicycle_analytics_report_parameters_schema.json")
+variable "schema_definition_file" {
+  description = "AVRO schema for the topic ID. Ensures consistency."
+  default     = "../../PubSub/Schema/bicycle_analytics_report_parameters_schema.json"
 }
