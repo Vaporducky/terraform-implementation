@@ -1,0 +1,49 @@
+[
+  {
+    "description": "Total duration of the trip",
+    "mode": "NULLABLE",
+    "name": "duration_minutes",
+    "type": "INTEGER"
+  },
+  {
+    "description": "Total cost of the trip",
+    "mode": "NULLABLE",
+    "name": "trip_cost",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "bike_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "start_time",
+    "type": "TIMESTAMP"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "end_time",
+    "type": "TIMESTAMP"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "start_station_id",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "start_station_name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "end_station_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "end_station_name",
+    "type": "STRING"
+  }
+]

@@ -1,0 +1,5 @@
+{
+	"PROJECT_ID_secret": "iot-bicycle-analytics-composer",
+	"TOPIC_ID": "bicycle_analytics_report_parameters",
+	"SUBSCRIPTION_ID": "bicycle-analytics-dataflow-trigger"
+}

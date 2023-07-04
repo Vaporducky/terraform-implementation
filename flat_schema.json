@@ -1,0 +1,1 @@
+{\n  "type": "record",\n  "name": "Avro",\n  "fields": [\n    {\n      "name": "startDate",\n      "type": "string"\n    },\n    {\n      "name": "endDate",\n      "type": "string"\n    }\n  ]\n}\n
